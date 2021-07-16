@@ -5,9 +5,52 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <title>大事件-登录界面</title>
 </head>
 <body>
+<div class="layui-main">
+    <img src="images/logo.png" alt="">
+</div>
+<div class="main-box">
+    <div class="main-box-title">
+    </div>
+    <!--        登录界面-->
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入帐号" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+        </div>
+    </form>
+    <div class="box-login" id="login">
+        <a href="javascript:;">没有帐号去注册</a>
+    </div>
+    <!--        注册界面-->
+    <form class="layui-form" action="" style="display: none">
+        <div class="layui-form-item">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入帐号" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item">
+            <input type="text" name="title" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">注册</button>
+        </div>
+    </form>
+    <div class="box-reg" id="reg">
+        <a href="javascript:;">去登录</a>
+    </div>
+</div>
 
+<!--导入jQuery-->
+<script src="lib/jquery.js"></script>
+<!--导入本页面的js文件-->
+<script src="js/login.js"></script>
 </body>
 </html>
