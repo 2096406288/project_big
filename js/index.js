@@ -35,7 +35,7 @@ function getUserinfo() {
     })
 }
 function roundinfo(user) {
-    let name =  user.username || user.nickname
+    let name =  user.nickname || user.username
     let info_src =  user.user_pic
     // 渲染文字
     $('.welcome').html('欢迎  '+ name)
